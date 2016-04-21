@@ -15,7 +15,8 @@ DAEMON_DESC=Icecast-KH
 CONF_FILE=/etc/icecast/icecast.xml
 DAEMON=/usr/local/bin/icecast
 DAEMON_ARGS="-c $CONF_FILE -b &"
-LOGFILE="/var/log/icecast/daemon.log"
+#This file has to create mannually
+LOGFILE="/usr/local/var/log/icecast/daemon.log"
 
 [ -x $DAEMON ] || exit 0
 
